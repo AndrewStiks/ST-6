@@ -8,8 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TicTacToeCellTest {
     @Test
-    public void testInitialState() {
+    void testInitialState() {
         TicTacToeCell cell = new TicTacToeCell(1, 0, 0);
+
+        assertNotNull(cell, "Cell object should not be null");
+
         assertEquals(' ', cell.getMarker());
         assertEquals(0, cell.getRow());
         assertEquals(0, cell.getCol());
@@ -17,17 +20,25 @@ public class TicTacToeCellTest {
     }
 
     @Test
-    public void testSetMarker() {
+    void testSetMarker() {
         TicTacToeCell cell = new TicTacToeCell(1, 0, 0);
+
+        assertNotNull(cell, "Cell object should not be null");
+
         cell.setMarker("X");
         assertEquals('X', cell.getMarker());
         assertFalse(cell.isEnabled());
     }
 
     @Test
-    public void testSetFont() {
+    void testSetFont() {
         TicTacToeCell cell = new TicTacToeCell(1, 0, 0);
+
+        assertNotNull(cell, "Cell object should not be null");
+
         Font font = cell.getFont();
+        assertNotNull(font);
+
         assertEquals("Arial", font.getName());
         assertEquals(40, font.getSize());
     }

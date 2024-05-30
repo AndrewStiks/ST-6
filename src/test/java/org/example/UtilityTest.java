@@ -3,6 +3,7 @@ package org.example;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,22 +11,17 @@ public class UtilityTest {
 
     @Test
     public void testPrintCharArray() {
-        char[] board = {'X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X'};
-        Utility.print(board);
+        Utility.print(new char[]{'X', 'O', 'X', 'O', 'X', 'O', 'X', 'O', 'X'});
     }
 
     @Test
     public void testPrintIntArray() {
-        int[] board = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        Utility.print(board);
+        Utility.print(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9});
     }
 
     @Test
     public void testPrintArrayList() {
-        ArrayList<Integer> moves = new ArrayList<>();
-        moves.add(1);
-        moves.add(2);
-        moves.add(3);
+        ArrayList<Integer> moves = new ArrayList<>(List.of(1, 2, 3));
         Utility.print(moves);
     }
 }

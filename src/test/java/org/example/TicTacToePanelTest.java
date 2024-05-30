@@ -9,8 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TicTacToePanelTest {
     @Test
     public void testTicTacToePanel() {
-        TicTacToePanel panel = new TicTacToePanel(new GridLayout(3, 3));
+        int side = 3;
+        TicTacToePanel panel = new TicTacToePanel(new GridLayout(side, side));
         assertNotNull(panel);
-        assertEquals(9, panel.getComponentCount());
+        assertEquals(side * side, panel.getComponentCount());
     }
 }

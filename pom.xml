@@ -42,7 +42,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <!-- Code Coverage report generation -->
+            <!-- Code Coverage report generation 123-->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>

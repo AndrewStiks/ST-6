@@ -3,7 +3,6 @@ package org.example;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -21,7 +20,7 @@ public class UtilityTest {
 
     @Test
     public void testPrintArrayList() {
-        ArrayList<Integer> moves = new ArrayList<>(List.of(1, 2, 3));
+        ArrayList<Integer> moves = new ArrayList<>();
         Utility.print(moves);
     }
 }
